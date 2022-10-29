@@ -1,0 +1,216 @@
+@use 'sass:map';
+
+@mixin icon {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 92px;
+    height: 92px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+$icons: (
+    'one': '../images/icons/one.png',
+    'two': '../images/icons/two.png',
+    'three': '../images/icons/three.png',
+    'four': '../images/icons/four.png',
+    'five': '../images/icons/five.png',
+    'six': '../images/icons/six.png',
+);
+
+@each $name, $path in $icons {
+    .icon_#{$name} {
+        background-image: url("#{$path}");
+        @include icon
+    }
+}
+
+.better {
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.services_box{
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.wrapper {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    padding-right: 14px;
+    margin: 0;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.services::after {
+    content: '';
+    background-image: url(../images/arrow_blue.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.hero {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.icon {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 92px;
+    height: 92px;
+    background-color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #24A3FF;
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .services {
+        margin: 0;
+    }
+
+    .wrapper {
+        width: 648px;
+    } 
+
+    .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 60px;
+    }
+
+    .better {
+        padding-top: 60px;
+    }
+
+    .services_box {
+        width: 294px;
+        margin-bottom: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .services_box:nth-child(5) {
+        margin-bottom: 0px;
+    }
+
+    .services_box:nth-child(6) {
+        margin-bottom: 0px;
+    }
+
+    .hero {
+        padding-top: 10px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 904px;
+    }
+
+    .better {
+        padding-top: 60px;
+    }
+
+    .services_box {
+        width: 261.33px;
+        margin-bottom: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width:1440px) {
+    .wrapper {
+        width: 1324px;
+    }
+
+    .services_box {
+        width: 400px;
+        margin-bottom: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        width: 1600px;
+    }
+
+    .services_box {
+        width: 493.33px;
+        margin-bottom: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .services {
+        color: #F0145A;
+    }
+
+    .services::after {
+        background-image: url(../images/arrow_red.png);
+    }
+}
+
+
+
+
+
+
+
