@@ -29,9 +29,16 @@ $icons: (
     }
 }
 
+.partners {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .better {
     padding-top: 30px;
     padding-bottom: 60px;
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
 }
 
 .services_box{
@@ -40,7 +47,7 @@ $icons: (
 }
 
 .wrapper {
-    width: 360px;
+    width: 315px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -69,7 +76,7 @@ $icons: (
     height: 12px;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 48%;
     margin-top: -6px;
 }
 
@@ -116,6 +123,22 @@ $icons: (
     margin: 0;
 }
 
+.bg_second {
+    background: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 10px;
+}
+
+.bg_first {
+    background: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+    height: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 @media (min-width: 768px) {
     .services {
         margin: 0;
@@ -123,7 +146,7 @@ $icons: (
 
     .wrapper {
         width: 648px;
-    } 
+    }
 
     .boxes {
         display: flex;
@@ -176,7 +199,7 @@ $icons: (
 
 @media (min-width:1440px) {
     .wrapper {
-        width: 1324px;
+        width: 1320px;
     }
 
     .services_box {

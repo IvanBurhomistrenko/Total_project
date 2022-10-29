@@ -1,0 +1,97 @@
+@use 'sass:map';
+
+@mixin cards {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 217px;
+    height: 152px;
+}
+
+$cards: (
+    '1': '../images/partners/1.png',
+    '2': '../images/partners/2.png',
+    '3': '../images/partners/3.png',
+    '4': '../images/partners/4.png',
+    '5': '../images/partners/5.png',
+    '6': '../images/partners/6.png',
+    '7': '../images/partners/7.png',
+    '8': '../images/partners/8.png',
+    '9': '../images/partners/9.png',
+    '10': '../images/partners/10.png',
+    '11': '../images/partners/11.png',
+    '12': '../images/partners/12.png',
+);
+
+@each $name, $path in $cards {
+    .card_#{$name} {
+        background-image: url("#{$path}");
+        @include cards
+    }
+}
+
+$cards_color: (
+    '1': '#1C4280',
+    '2': '#143646',
+    '3': '#F48B30',
+    '4': '#9E4DC3',
+    '5': '#FD9339',
+    '6': '#E2E2E4',
+    '7': '#C71C36',
+    '8': '#DCF3F9',
+    '9': '#EAEAEA',
+    '10': '#282240',
+    '11': '#1D4568',
+    '12': '#000000',
+);
+
+@each $name, $path in $cards_color {
+    .card_partner_#{$name} {
+        background-color: #{$path};
+        width: 375px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.none {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .partners_box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .partners_box a {
+        width: 256px;
+    }
+
+    .none {
+        display: flex;
+    }
+
+    .partners {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .partners_box a {
+        width: 360px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .partners_box a {
+        width: 430px;
+    }
+
+    .partners_box {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
