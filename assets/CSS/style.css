@@ -375,11 +375,6 @@ template {
   margin-bottom: 30px;
 }
 
-.partners {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
 .better {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -388,8 +383,11 @@ template {
 }
 
 .services_box {
-  padding-top: 10px;
   padding-bottom: 30px;
+}
+
+.services_box:last-child {
+  padding-bottom: 0;
 }
 
 .wrapper {
@@ -408,7 +406,7 @@ template {
   color: #24A3FF;
   padding-right: 14px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -435,7 +433,6 @@ template {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin: 0;
-  padding-top: 10px;
   padding-bottom: 30px;
 }
 
@@ -486,17 +483,16 @@ template {
 }
 
 @media (min-width: 768px) {
-  .services {
-    margin: 0;
-  }
   .wrapper {
     width: 648px;
+  }
+  .hero {
+    padding-bottom: 60px;
   }
   .boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 60px;
   }
   .better {
     padding-top: 60px;
@@ -513,10 +509,6 @@ template {
   .services_box:nth-child(6) {
     margin-bottom: 0px;
   }
-  .hero {
-    padding-top: 10px;
-    padding-bottom: 0;
-  }
 }
 @media (min-width: 1024px) {
   .wrapper {
@@ -530,6 +522,9 @@ template {
     margin-bottom: 60px;
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .services_box:nth-child(4) {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1440px) {
@@ -789,10 +784,27 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
+  .partners_wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .partners_wrapper {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media (min-width: 1440px) {
   .partners_box a {
     width: 360px;
+  }
+  .partners_wrapper {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 1920px) {
@@ -802,6 +814,26 @@ body {
   .partners_box {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .card_partner_1 {
+    border-radius: 10px 0 0 0;
+  }
+  .card_partner_4 {
+    border-radius: 0 10px 0 0;
+  }
+  .card_partner_9 {
+    border-radius: 0 0 0 10px;
+  }
+  .card_partner_12 {
+    border-radius: 0 0 10px 0;
+  }
+  .partners {
+    padding-bottom: 60px;
+  }
+  .partners_wrapper {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

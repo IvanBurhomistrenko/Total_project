@@ -29,11 +29,6 @@ $icons: (
     }
 }
 
-.partners {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 .better {
     padding-top: 30px;
     padding-bottom: 60px;
@@ -41,9 +36,12 @@ $icons: (
     border-radius: 0px 0px 12px 12px;
 }
 
-.services_box{
-    padding-top: 10px;
+.services_box {
     padding-bottom: 30px;
+}
+
+.services_box:last-child {
+    padding-bottom: 0;
 }
 
 .wrapper {
@@ -62,7 +60,7 @@ $icons: (
     color: #24A3FF;
     padding-right: 14px;
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -89,7 +87,6 @@ $icons: (
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin: 0;
-    padding-top: 10px;
     padding-bottom: 30px;
 }
 
@@ -140,19 +137,18 @@ $icons: (
 }
 
 @media (min-width: 768px) {
-    .services {
-        margin: 0;
-    }
-
     .wrapper {
         width: 648px;
+    }
+
+    .hero {
+        padding-bottom: 60px;
     }
 
     .boxes {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 60px;
     }
 
     .better {
@@ -172,12 +168,7 @@ $icons: (
 
     .services_box:nth-child(6) {
         margin-bottom: 0px;
-    }
-
-    .hero {
-        padding-top: 10px;
-        padding-bottom: 0;
-    }
+    } 
 }
 
 @media (min-width: 1024px) {
@@ -195,6 +186,10 @@ $icons: (
         padding-top: 0;
         padding-bottom: 0;
     }
+
+    .services_box:nth-child(4) {
+        margin-bottom: 0px;
+    } 
 }
 
 @media (min-width:1440px) {

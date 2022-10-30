@@ -77,11 +77,31 @@ $cards_color: (
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    .partners_wrapper {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:1024px) {
+    .partners_wrapper {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 1440px) {
     .partners_box a {
         width: 360px;
+    }
+
+    .partners_wrapper {
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -94,4 +114,32 @@ $cards_color: (
         padding-left: 100px;
         padding-right: 100px;
     }
+
+    .card_partner_1 {
+        border-radius: 10px 0 0 0;
+    }
+
+    .card_partner_4 {
+        border-radius: 0 10px 0 0;
+    }
+
+    .card_partner_9 {
+        border-radius: 0 0 0 10px;
+    }
+
+    .card_partner_12 {
+        border-radius: 0 0 10px 0;
+    }
+
+    .partners {
+        padding-bottom: 60px;
+    }
+
+    .partners_wrapper {
+        width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 }
