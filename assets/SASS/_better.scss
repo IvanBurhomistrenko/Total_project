@@ -13,6 +13,18 @@
     margin-bottom: 30px;
 }
 
+@mixin better_b_a ($color,$width,$tranclete) {
+    content: '';
+    background-color: $color;
+    border-radius: 0px 0px 12px 12px;
+    height: 10px;
+    width: $width;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: $tranclete;
+}
+
 $icons: (
     'one': '../images/icons/one.png',
     'two': '../images/icons/two.png',
@@ -34,10 +46,12 @@ $icons: (
     padding-bottom: 60px;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius: 0px 0px 12px 12px;
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .services_box {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .services_box:last-child {
@@ -62,6 +76,7 @@ $icons: (
     margin: 0;
     margin-bottom: 10px;
     position: relative;
+    text-decoration: none;
 }
 
 .services::after {
@@ -86,8 +101,8 @@ $icons: (
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: 0;
-    padding-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .icon {
@@ -103,7 +118,7 @@ $icons: (
     margin-bottom: 30px;
 }
 
-.h3 {
+.services_heder {
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
@@ -120,20 +135,12 @@ $icons: (
     margin: 0;
 }
 
-.bg_second {
-    background: #E7E7F2;
-    border-radius: 0px 0px 12px 12px;
-    margin-left: 40px;
-    margin-right: 40px;
-    height: 10px;
+.better::before {
+    @include better_b_a (#CACADB,calc(100% - 40px),translate(-50%))
 }
 
-.bg_first {
-    background: #CACADB;
-    border-radius: 0px 0px 12px 12px;
-    height: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+.better::after {
+    @include better_b_a (#E7E7F2,calc(100% - 80px),translate(-50%, 100%))
 }
 
 @media (min-width: 768px) {
@@ -142,7 +149,7 @@ $icons: (
     }
 
     .hero {
-        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
 
     .boxes {
@@ -153,6 +160,7 @@ $icons: (
 
     .better {
         padding-top: 60px;
+        margin-bottom: 80px;
     }
 
     .services_box {

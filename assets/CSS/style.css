@@ -380,10 +380,12 @@ template {
   padding-bottom: 60px;
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .services_box {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .services_box:last-child {
@@ -408,6 +410,7 @@ template {
   margin: 0;
   margin-bottom: 10px;
   position: relative;
+  text-decoration: none;
 }
 
 .services::after {
@@ -432,8 +435,8 @@ template {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 0;
-  padding-bottom: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .icon {
@@ -449,7 +452,7 @@ template {
   margin-bottom: 30px;
 }
 
-.h3 {
+.services_heder {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
@@ -466,20 +469,28 @@ template {
   margin: 0;
 }
 
-.bg_second {
-  background: #E7E7F2;
+.better::before {
+  content: "";
+  background-color: #CACADB;
   border-radius: 0px 0px 12px 12px;
-  margin-left: 40px;
-  margin-right: 40px;
   height: 10px;
+  width: calc(100% - 40px);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-.bg_first {
-  background: #CACADB;
+.better::after {
+  content: "";
+  background-color: #E7E7F2;
   border-radius: 0px 0px 12px 12px;
   height: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: calc(100% - 80px);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 100%);
 }
 
 @media (min-width: 768px) {
@@ -487,7 +498,7 @@ template {
     width: 648px;
   }
   .hero {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   .boxes {
     display: flex;
@@ -496,6 +507,7 @@ template {
   }
   .better {
     padding-top: 60px;
+    margin-bottom: 80px;
   }
   .services_box {
     width: 294px;
@@ -566,7 +578,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_2 {
@@ -574,7 +586,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_3 {
@@ -582,7 +594,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_4 {
@@ -590,7 +602,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_5 {
@@ -598,7 +610,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_6 {
@@ -606,7 +618,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_7 {
@@ -614,7 +626,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_8 {
@@ -622,7 +634,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_9 {
@@ -630,7 +642,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_10 {
@@ -638,7 +650,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_11 {
@@ -646,7 +658,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_12 {
@@ -654,12 +666,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 217px;
-  height: 152px;
+  height: 100%;
 }
 
 .card_partner_1 {
   background-color: #1C4280;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -668,7 +679,6 @@ body {
 
 .card_partner_2 {
   background-color: #143646;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -677,7 +687,6 @@ body {
 
 .card_partner_3 {
   background-color: #F48B30;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -686,7 +695,6 @@ body {
 
 .card_partner_4 {
   background-color: #9E4DC3;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -695,7 +703,6 @@ body {
 
 .card_partner_5 {
   background-color: #FD9339;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -704,7 +711,6 @@ body {
 
 .card_partner_6 {
   background-color: #E2E2E4;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -713,7 +719,6 @@ body {
 
 .card_partner_7 {
   background-color: #C71C36;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -722,7 +727,6 @@ body {
 
 .card_partner_8 {
   background-color: #DCF3F9;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -731,7 +735,6 @@ body {
 
 .card_partner_9 {
   background-color: #EAEAEA;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -740,7 +743,6 @@ body {
 
 .card_partner_10 {
   background-color: #282240;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -749,7 +751,6 @@ body {
 
 .card_partner_11 {
   background-color: #1D4568;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -758,7 +759,6 @@ body {
 
 .card_partner_12 {
   background-color: #000000;
-  width: 375px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -767,6 +767,10 @@ body {
 
 .none {
   display: none;
+}
+
+.partners_box a {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
