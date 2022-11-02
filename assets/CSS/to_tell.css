@@ -9,7 +9,7 @@
   padding-top: 30px;
 }
 
-.publications {
+.tell_link {
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
@@ -19,12 +19,11 @@
   color: #24A3FF;
   padding-right: 14px;
   margin: 0;
-  margin-bottom: 5px;
   position: relative;
   text-decoration: none;
 }
 
-.publications::after {
+.tell_link::after {
   content: "";
   background-image: url(../images/arrow_blue.png);
   background-size: cover;
@@ -38,10 +37,14 @@
   margin-top: -6px;
 }
 
-.publications_active:hover .publications {
+.tell_link {
+  margin-bottom: 5px;
+}
+
+.tell_link_active:hover .tell_link {
   color: #F0145A;
 }
-.publications_active:hover .publications::after {
+.tell_link_active:hover .tell_link::after {
   background-image: url(../images/arrow_red.png);
 }
 

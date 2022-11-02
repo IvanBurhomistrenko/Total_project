@@ -25,7 +25,7 @@
     display: none;
 }
 
-.services_team {
+.link_team {
     display: inline-block;
     font-weight: 700;
     font-size: 14px;
@@ -35,12 +35,11 @@
     color: #24A3FF;
     padding-right: 14px;
     margin: 0;
-    margin-bottom: 5px;
     position: relative;
     text-decoration: none;
 }
 
-.services_team::after {
+.link_team::after {
     content: '';
     background-image: url(../images/arrow_blue.png);
     background-size: cover;
@@ -54,12 +53,16 @@
     margin-top: -6px;
 }
 
-.service_team_active:hover {
-     .services_team {
+.link_team_active {
+    margin-bottom: 5px;
+}
+
+.link_team_active:hover {
+     .link_team {
         color: #F0145A;  
     }
     
-    .services_team::after {
+    .link_team::after {
         background-image: url(../images/arrow_red.png); 
     }
 }
