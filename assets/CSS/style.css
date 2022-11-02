@@ -800,6 +800,11 @@ body {
   .partners_box a {
     width: 25%;
   }
+  .partners_wrapper {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .partners_box {
     padding-left: 100px;
     padding-right: 100px;
@@ -966,6 +971,11 @@ body {
   .photo {
     width: 400px;
   }
+  .wrapper_team {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .bg_tell {
   background-color: #F5F5FA;
@@ -1113,6 +1123,13 @@ body {
   }
   .card:last-child {
     width: calc(33.33% - 15px);
+  }
+}
+@media (min-width: 1920px) {
+  .wrapper_tell {
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
