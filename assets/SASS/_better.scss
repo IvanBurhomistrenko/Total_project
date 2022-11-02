@@ -59,9 +59,9 @@ $icons: (
 }
 
 .wrapper {
-    width: 315px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .services {
@@ -145,6 +145,17 @@ $icons: (
     margin: 0;
 }
 
+.paethers_h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323264;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
 .better::before {
     @include better_b_a (#CACADB,calc(100% - 40px),translate(-50%))
 }
@@ -155,7 +166,8 @@ $icons: (
 
 @media (min-width: 768px) {
     .wrapper {
-        width: 648px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .hero {
@@ -174,7 +186,7 @@ $icons: (
     }
 
     .services_box {
-        width: 294px;
+        width: calc(50% - 30px);
         margin-bottom: 60px;
         padding-top: 0;
         padding-bottom: 0;
@@ -190,16 +202,12 @@ $icons: (
 }
 
 @media (min-width: 1024px) {
-    .wrapper {
-        width: 904px;
-    }
-
     .better {
         padding-top: 60px;
     }
 
     .services_box {
-        width: 261.33px;
+        width: calc(33.33% - 40px);
         margin-bottom: 60px;
         padding-top: 0;
         padding-bottom: 0;
@@ -210,24 +218,13 @@ $icons: (
     } 
 }
 
-@media (min-width:1440px) {
-    .wrapper {
-        width: 1320px;
-    }
-
-    .services_box {
-        width: 400px;
-        margin-bottom: 60px;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
-
 @media (min-width: 1920px) {
     .wrapper {
-        width: 1600px;
+        max-width: 1920px;
+        margin-left:auto;
+        margin-right: auto;
     }
-
+    
     .services_box {
         width: 493.33px;
         margin-bottom: 60px;

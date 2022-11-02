@@ -3,7 +3,7 @@
 @mixin cards {
     background-repeat: no-repeat;
     background-position: center;
-    width: 217px;
+    width: 100%;
     height: 100%;
 }
 
@@ -69,54 +69,36 @@ $cards_color: (
         flex-wrap: wrap;
     }
 
-    .partners_box a {
-        width: 256px;
+    .partners_box a { 
+        width: 33.33%;
     }
 
     .none {
         display: flex;
     }
 
-    .partners {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
     .partners_wrapper {
-        width: 768px;
-        margin-left: auto;
-        margin-right: auto;
+        width: auto;
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
 @media (min-width:1024px) {
-    .partners_wrapper {
-        width: 1024px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media (min-width: 1440px) {
     .partners_box a {
-        width: 360px;
-    }
-
-    .partners_wrapper {
-        width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 25%;
     }
 }
 
 @media (min-width: 1920px) {
     .partners_box a {
-        width: 430px;
+        width: 25%;
     }
 
     .partners_box {
         padding-left: 100px;
         padding-right: 100px;
+        overflow: hidden;
     }
 
     .card_partner_1 {
@@ -137,11 +119,5 @@ $cards_color: (
 
     .partners {
         padding-bottom: 60px;
-    }
-
-    .partners_wrapper {
-        width: 1920px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
