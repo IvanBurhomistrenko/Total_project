@@ -93,6 +93,16 @@ $icons: (
     margin-top: -6px;
 }
 
+.service_active:hover {
+     .services {
+        color: #F0145A;  
+    }
+    
+    .services::after {
+        background-image: url(../images/arrow_red.png); 
+    }
+}
+
 .hero {
     font-weight: 700;
     font-size: 30px;
@@ -223,14 +233,6 @@ $icons: (
         margin-bottom: 60px;
         padding-top: 0;
         padding-bottom: 0;
-    }
-
-    .services {
-        color: #F0145A;
-    }
-
-    .services::after {
-        background-image: url(../images/arrow_red.png);
     }
 }
 
