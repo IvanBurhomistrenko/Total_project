@@ -412,7 +412,7 @@ template {
   text-decoration: none;
 }
 
-.services::after {
+.link_arrow::after {
   content: "";
   background-image: url(../images/arrow_blue.png);
   background-size: cover;
@@ -422,7 +422,7 @@ template {
   height: 12px;
   position: absolute;
   right: 0;
-  top: 48%;
+  top: 50%;
   margin-top: -6px;
 }
 

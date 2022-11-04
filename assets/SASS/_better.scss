@@ -69,7 +69,7 @@ $icons: (
     @include link;
 }
 
-.services::after {
+.link_arrow::after {
     @include link_after;
 }
 
