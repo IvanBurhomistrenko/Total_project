@@ -1,0 +1,37 @@
+@mixin link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    padding-right: 14px;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+@mixin link_after {
+    content: '';
+    background-image: url(../images/arrow_blue.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 48%;
+    margin-top: -6px;
+}
+
+@mixin link_hover {
+    .link_arrow {
+        color: #F0145A;  
+    }
+    
+    .link_arrow::after {
+        background-image: url(../images/arrow_red.png); 
+    }
+}

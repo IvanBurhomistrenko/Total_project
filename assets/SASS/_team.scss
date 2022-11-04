@@ -25,46 +25,12 @@
     display: none;
 }
 
-.link_team {
-    display: inline-block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #24A3FF;
-    padding-right: 14px;
-    margin: 0;
-    position: relative;
-    text-decoration: none;
-}
-
-.link_team::after {
-    content: '';
-    background-image: url(../images/arrow_blue.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 12px;
-    height: 12px;
-    position: absolute;
-    right: 0;
-    top: 48%;
-    margin-top: -6px;
-}
-
 .link_team_active {
     margin-bottom: 5px;
 }
 
 .link_team_active:hover {
-     .link_team {
-        color: #F0145A;  
-    }
-    
-    .link_team::after {
-        background-image: url(../images/arrow_red.png); 
-    }
+    @include link_hover
 }
 
 .hero_team {
