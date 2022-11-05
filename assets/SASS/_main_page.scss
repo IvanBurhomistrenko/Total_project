@@ -1,0 +1,45 @@
+.main_page {
+    margin-bottom: 30px;
+}
+
+.main_page_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.main_hero {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0px;
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_button {
+    opacity: 0.5;
+    border: 2px solid #FFFFFF;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    padding: 18px 12px 15px 12px;
+    background: transparent;
+    margin-bottom: 30px;
+}
+
+.button_arrow {
+    border: 2px solid #FFFFFF;
+}
