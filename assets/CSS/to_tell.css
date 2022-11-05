@@ -122,9 +122,10 @@
 }
 @media (min-width: 1920px) {
   .wrapper_tell {
-    width: 1920px;
+    width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0;
   }
 }
 
