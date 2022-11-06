@@ -1235,6 +1235,10 @@ body {
   margin-left: 30px;
 }
 
+.hero_nav:hover {
+  color: #F0145A;
+}
+
 .hero_nav:first-child {
   margin-left: 0;
 }
@@ -1356,6 +1360,110 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.contact_form {
+  background-color: #F5F5FA;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 60px);
+  padding: 30px 30px;
+}
+
+.first_block_form {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.hero_close {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0;
+}
+
+.hero_form {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.close {
+  width: 32px;
+  height: 32px;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.form_inputs {
+  padding: 15px 15px 15px 15px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form_textarea {
+  height: 130px;
+  resize: none;
+}
+
+.form_inputs:last-child {
+  margin-bottom: 0px;
+}
+
+.form_textarea::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.form_inputs::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B3B3BA;
+}
+
+.second_block_form {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.h3_form {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.form_btn {
+  background: #24A3FF;
+  box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+  border-radius: 12px;
+  border-radius: 12px;
+  padding: 18px 96px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
