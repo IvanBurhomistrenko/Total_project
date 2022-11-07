@@ -27,12 +27,12 @@
 }
 
 $icons: (
-    'one': '../images/icons/one.png',
-    'two': '../images/icons/two.png',
-    'three': '../images/icons/three.png',
-    'four': '../images/icons/four.png',
-    'five': '../images/icons/five.png',
-    'six': '../images/icons/six.png',
+    'one': '../images/icons/one.svg',
+    'two': '../images/icons/two.svg',
+    'three': '../images/icons/three.svg',
+    'four': '../images/icons/four.svg',
+    'five': '../images/icons/five.svg',
+    'six': '../images/icons/six.svg',
 );
 
 @each $name, $path in $icons {
