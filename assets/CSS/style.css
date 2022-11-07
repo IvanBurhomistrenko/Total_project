@@ -1287,7 +1287,7 @@ body {
 @media (min-width: 768px) {
   .wrapper_nav {
     width: auto;
-    padding-right: 60px;
+    padding-left: 60px;
     padding-right: 60px;
   }
   .nav_box {
