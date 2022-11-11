@@ -1,0 +1,157 @@
+.footer_wrapper {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.footer_box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer_line {
+    width: 100%;
+    height: 2px;
+    background: #E6E6F0;
+    margin-bottom: 30px;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stret_map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.street {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323264;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.separator {
+    width: 6px;
+    height: 6px;
+    background: #B3B3BA;
+    border: 1px;
+    border-radius: 100px;
+    display: none;
+}
+
+.footer_text {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24A3FF;
+    margin: 0;
+}
+
+.footer_map {
+    margin-bottom: 21px;
+}
+
+.resolution_357_footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fb_logo {
+    width: 38px;
+    height: 38px;
+    margin-bottom: 10px;
+}
+
+.footer_tel {
+    color: #46466E;
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin-bottom: 30px;
+}
+
+.footer_text_light {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #B3B3BA;
+}
+
+.resolution_box {
+    display: none;
+}
+
+
+@media (min-width:768px) {
+    .footer_wrapper {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+    
+    .footer_info {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 21px;
+    }
+
+    .stret_map {
+        flex-direction: row;
+        justify-content: left;
+        gap: 10px;
+    }
+
+    .street {
+        margin: 0;
+    }
+
+    .separator {
+        display: block;
+    }
+
+    .footer_map {
+        margin: 0;
+    }
+
+    .resolution_357_footer {
+        display: none;
+    }
+
+    .resolution_box {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footer_tel {
+        margin: 0;
+    }
+
+    .contact {
+        margin: 0;
+    }
+
+    .fb_logo {
+        margin: 0;
+    }
+}
+
+@media (min-width:1920px) {
+    .footer_wrapper {
+        width: 1600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
