@@ -1032,6 +1032,7 @@ body {
   line-height: 22px;
   color: #000000;
   margin: 0;
+  width: 255px;
 }
 
 @media (min-width: 768px) {
@@ -1058,6 +1059,12 @@ body {
   .tell_link_active {
     margin-bottom: 10px;
   }
+  .text_box {
+    width: 249px;
+  }
+  .text_box_big {
+    width: 588px;
+  }
 }
 @media (min-width: 1024px) {
   .cards_grid {
@@ -1074,6 +1081,14 @@ body {
   .card:last-child {
     width: calc(33.33% - 15px);
   }
+  .text_box {
+    width: 221.33px;
+  }
+}
+@media (min-width: 1440px) {
+  .text_box {
+    width: 360px;
+  }
 }
 @media (min-width: 1920px) {
   .wrapper_tell {
@@ -1082,6 +1097,9 @@ body {
     margin-right: auto;
     padding: 0;
     padding-top: 30px;
+  }
+  .text_box {
+    width: 453.33px;
   }
 }
 .main_bg {
