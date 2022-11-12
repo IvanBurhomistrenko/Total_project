@@ -1230,6 +1230,10 @@ body {
 
 .hero_nav:hover {
   color: #F0145A;
+  background: #F0145A;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero_nav:first-child {
