@@ -1,17 +1,24 @@
 .main_page {
     margin-bottom: 30px;
+    height: 100vh;
 }
 
 .main_page_box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
     content: '';
-    background-image: url(../images/heder/Symbol.svg);
+    background-image: url(../images/main_page/Symbol.svg);
     background-size: cover;
-    background-position-x: 100%;
+    background-position-x: center;
     background-repeat: no-repeat;
+}
+
+.heder_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main_hero {
@@ -48,3 +55,10 @@
 .button_arrow {
     border: 2px solid #FFFFFF;
 }
+
+@media (min-width:1024px) {
+    .main_page_box {
+        background-size: contain;
+    } 
+}
+ 
