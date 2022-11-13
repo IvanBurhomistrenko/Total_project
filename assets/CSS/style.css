@@ -1063,7 +1063,7 @@ body {
     margin-bottom: 10px;
   }
   .text_box_big {
-    width: 588px;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
@@ -1565,13 +1565,16 @@ body {
   padding: 12px;
   flex-direction: column;
   text-align: center;
+  width: calc(100% - 24px);
 }
 
 .drop_box {
   position: absolute;
   display: none;
-  right: calc(100% - 20px);
+  right: -16px;
   padding-top: 30px;
+  z-index: 10;
+  width: 359px;
 }
 
 .dropdown_links a {
@@ -1584,7 +1587,6 @@ body {
   text-decoration: none;
   background: #F5F5FA;
   border-radius: 12px;
-  width: 335px;
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 15px;
