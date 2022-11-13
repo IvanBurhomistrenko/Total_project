@@ -13,14 +13,6 @@
     z-index: 5;
 }
 
-// .symbol {
-//     position: absolute;
-//     z-index: -5;
-//     width: 100%;
-//     height: 100vh;
-//     background-size: cover;
-// }
-
 .active_lang{
     padding: 5px 7px;
     background-color: #F0145A;
@@ -44,6 +36,14 @@
     padding: 5px 7px 5px 7px;
 }
 
+.heder_none {
+    display: none;
+}
+
+.street.heder_street {
+    color: #B3B3BA;
+}
+
 .tel {
     padding: 12px 15px 12px 0;
     font-weight: 700;
@@ -51,6 +51,7 @@
     line-height: 20px;
     text-align: right;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .lower_heder {
@@ -61,7 +62,50 @@
     padding-left: 15px;
 }
 
+@media (min-width:768px) {
+    .heder_none {
+        display: block;
+    }
 
-// @media (min-width:768px) {
+    .high_heder {
+        justify-content: left;
+        gap: 6px;
+    }
 
-// }
+    .heder_box {
+        padding-top: 50px;
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 30px;
+    }
+
+    .high_heder {
+        background: none;
+    }
+
+    .lang {
+        padding: 0;
+    }
+
+    .tel {
+        padding: 0;
+    }
+
+    .lower_heder {
+        padding: 0;
+    }
+
+    .burger_menu {
+        display: none;
+    }
+}
+
+@media (min-width:1920px) {
+    .heder_box {
+        width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

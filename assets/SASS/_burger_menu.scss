@@ -64,3 +64,23 @@
     justify-content: right;
     margin-bottom: 20px;
 }
+
+.open_burger_menu {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .open_burger_menu {
+        display: flex;
+        gap: 15px;
+    }
+
+    .open_burger_menu a {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: right;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}

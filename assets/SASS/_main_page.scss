@@ -13,6 +13,7 @@
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .heder_box {
@@ -27,9 +28,11 @@
     line-height: 46px;
     text-align: center;
     color: #FFFFFF;
-    padding-left: 30px;
-    padding-right: 30px;
     margin: 0px;
+    position: absolute;
+    left: calc(50% - 315px/2);
+    top: calc(50% - 138px/2);
+    width: 315px;
 }
 
 .btn_wrapper {
@@ -54,6 +57,18 @@
 
 .button_arrow {
     border: 2px solid #FFFFFF;
+}
+
+@media (min-width:768px) {
+    .main_page {
+        margin-bottom: 60px;
+    }
+    
+    .main_hero {
+        left: calc(50% - 800px/2);
+        top: calc(50% - 46px/2);
+        width: 800px;
+    }
 }
 
 @media (min-width:1024px) {
