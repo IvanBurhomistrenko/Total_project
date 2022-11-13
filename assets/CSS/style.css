@@ -1256,10 +1256,6 @@ body {
   margin-bottom: 30px;
 }
 
-.button_arrow {
-  border: 2px solid #FFFFFF;
-}
-
 @media (min-width: 768px) {
   .main_page {
     margin-bottom: 60px;
