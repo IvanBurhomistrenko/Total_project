@@ -68,6 +68,8 @@
     color: #FFFFFF;
     margin: 0;
     margin-bottom: 30px;
+    border-top: solid 4px rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
 }
 
 .nav_text {
@@ -89,15 +91,10 @@
         padding: 60px 0 60px 60px;
     }
 
-    .line_box {
-        padding-left:60px;
-        padding-right: 60px;
-        margin-bottom: 60px;
-    }
-
     .nav_h2 {
         font-size: 30px;
         line-height: 37px;
+        padding-top: 60px;
     }
 
     .hero_nav {
@@ -123,19 +120,14 @@
        display: none;
     }
 
-    .line_box {
-        width: 4px;
-        height: 303px;
-        padding: 0;
-        border-right: 3px solid rgba(255, 255, 255, 0.3);
-        margin-bottom: 0;
-    }
-
     .nav_box {
         flex-direction: column;
         overflow: visible;
         padding: 0;
-        margin-right: 60px;
+        padding-right: 60px;
+        border-right: 3px solid rgba(255, 255, 255, 0.3);
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .hero_nav:last-child {
@@ -151,6 +143,11 @@
 
     .hero_nav:first-child {
         margin-left: auto;
+    }
+
+    .nav_h2 {
+        padding-top: 0;
+        border: none;
     }
 }
 
