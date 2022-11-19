@@ -1,5 +1,4 @@
 .main_page {
-    margin-bottom: 30px;
     height: 100vh;
 }
 
@@ -14,12 +13,6 @@
     background-position-x: center;
     background-repeat: no-repeat;
     position: relative;
-}
-
-.heder_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .main_hero {
@@ -55,19 +48,11 @@
     margin-bottom: 30px;
 }
 
-// .button_arrow {
-//     border: 2px solid #FFFFFF;
-// }
-
-@media (min-width:768px) {
-    .main_page {
-        margin-bottom: 60px;
-    }
-    
+@media (min-width:768px) {  
     .main_hero {
         left: calc(50% - 800px/2);
         top: calc(50% - 46px/2);
-        width: 800px;
+        width: 780px;
     }
 }
 

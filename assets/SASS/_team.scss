@@ -94,8 +94,8 @@
 
 @media (min-width:768px) {
     .hero_team {
-        font-size: 42px;
-        line-height: 46px;
+        font-size: 38px;
+        line-height: 46.32px;
     }
 }
 
@@ -113,6 +113,16 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .hero_team {
+        width: 444px;
+    }
+}
+
+@media (min-width:1024px) {
+    .hero_team {
+        width: auto;
     }
 }
 

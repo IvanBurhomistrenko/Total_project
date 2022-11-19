@@ -10,7 +10,6 @@
 }
 
 .burger_menu_dropdown {
-    position: relative;
     display: inline-block;
 }
 
@@ -21,16 +20,18 @@
     padding: 12px;
     flex-direction: column;
     text-align: center;
-    width: calc(100% - 24px);
+    width: calc(359px - 24px);
 }
 
 .drop_box {
     position: absolute;
     display: none;
-    right: -16px;
     padding-top: 30px;
     z-index: 10;
     width: 359px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .dropdown_links a {

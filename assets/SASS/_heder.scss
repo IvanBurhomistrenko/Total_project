@@ -10,7 +10,12 @@
     justify-content: space-between;
     align-items: center;
     background: rgba(245, 245, 250, 0.2);
-    z-index: 5;
+}
+
+.heder_box_mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .active_lang{
@@ -72,36 +77,55 @@
         display: block;
     }
 
-    .high_heder {
-        justify-content: left;
-        gap: 6px;
-    }
-
     .heder_box {
-        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
         padding-left: 60px;
         padding-right: 60px;
-        gap: 30px;
-    }
-
-    .high_heder {
-        background: none;
+        padding-top: 50px;
+        row-gap: 30px;
     }
 
     .lang {
         padding: 0;
     }
 
-    .tel {
-        padding: 0;
+    .high_heder {
+        background: none;
+        gap: 6px;
+        justify-content: start;
     }
 
-    .lower_heder {
-        padding: 0;
-    }
-
-    .burger_menu {
+    .heder_box_mobile {
         display: none;
+    }
+
+    .heder_tel {
+        padding: 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .heder_box {
+       grid-template-columns: 130px auto;
+       grid-auto-rows: auto;
+       grid-template-areas:
+            "logo heder"
+            "logo burger_menu"
+            ;
+        justify-content: space-between;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .high_heder {
+        grid-area: heder;
+    }
+
+    .open_burger_menu {
+        grid-area: burger_menu;
     }
 }
 
@@ -110,7 +134,7 @@
         width: 1600px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }

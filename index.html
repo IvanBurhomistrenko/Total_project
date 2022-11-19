@@ -16,23 +16,17 @@
         <div class="main_bg">
             <section class="main_page">
                 <div class="main_page_box">
-                    <div class="heder_box">
+                    <div class="heder_box_mobile">
                         <div class="high_heder">
                             <div class="lang">
                                 <a href="/">УК</a>
                                 <a href="/">РУ</a>
                                 <a href="/" class="active_lang">EN</a>
                             </div>
-                            <div class="separator heder_none"></div>
-                            <a href="/" class="street heder_none heder_street">Kyiv, Mechnikova str., 14/1</a>
-                            <div class="separator heder_none"></div>
                             <a class="tel" href="tel:0800211927">0800 211 927</a>
-                            <div class="separator heder_none"></div>
-                            <img class="heder_fb_logo heder_none" src="./assets/images/heder/fb_logo.svg" alt="fb_logo">
                         </div>
                         <div class="lower_heder">
                             <picture>
-                                <source media="(min-width: 768px)" srcset="./assets/images/heder/logo_tablet.svg">
                                 <img class="logo" src="./assets/images/heder/logo.svg" alt="logo">
                             </picture>
                             <div class="burger_menu_dropdown">
@@ -55,13 +49,29 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="heder_box heder_none">
+                        <div class="high_heder">
+                            <div class="lang">
+                                <a href="/">УК</a>
+                                <a href="/">РУ</a>
+                                <a href="/" class="active_lang">EN</a>
+                            </div>
+                            <div class="separator"></div>
+                            <a href="/" class="street heder_street">Kyiv, Mechnikova str., 14/1</a>
+                            <div class="separator"></div>
+                            <a class="tel heder_tel" href="tel:0800211927">0800 211 927</a>
+                            <div class="separator"></div>
+                            <img class="heder_fb_logo" src="./assets/images/heder/fb_logo.svg" alt="fb_logo">
+                        </div>
+                        <img class="logo" src="./assets/images/heder/logo_tablet.svg" alt="logo">
                         <div class="open_burger_menu">
                             <a href="/" class="drop_link">about us</a>
                             <a href="/" class="drop_link">services</a>
                             <a href="/" class="drop_link">team</a>
                             <a href="/" class="drop_link">publications</a>
                             <a href="/" class="drop_link">contact</a>            
-                        </div>    
+                        </div>
                     </div>
                     <p class="main_hero">you legal solutions provider</p>
                     <div class="btn_wrapper">
@@ -82,7 +92,7 @@
                     <div class="nav_line"></div>
                 </div>
                 <div class="wrapper_nav">
-                    <div class="nav_h2">We turn the idea of legal services</div>
+                    <h2 class="nav_h2">We turn the idea of legal services</h2>
                     <p class="nav_text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
                 </div> 
             </section> 
@@ -282,6 +292,26 @@
                 </div>
             </div>
         </footer>
-    </main>  
+    </main>
+    <div class="veil">
+        <form class="contact_form">
+            <div class="hero_close">
+                <p class="hero_form">We would like to help you</p>
+                <button type="button" class="close">
+                    <img alt="close_btn" src="./assets/images/form/Close.svg">
+                </button> 
+            </div>
+            <div class="first_block_form">
+                <input class="form_inputs" type="text" name="name" placeholder="Name">
+                <textarea class="form_inputs form_textarea" name="text" placeholder="Message"></textarea>
+            </div>
+            <div class="second_block_form">
+                <p class="h3_form">How to answer you?</p>
+                <input class="form_inputs" type="tel" name="tel" placeholder="Phone number">
+                <input class="form_inputs" type="email" name="email" placeholder="Email">
+            </div>
+            <button class="form_btn" type="submit">Send message</button>
+        </form>  
+    </div>
 </body>
 </html>
