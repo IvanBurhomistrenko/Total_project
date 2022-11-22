@@ -1170,6 +1170,10 @@ body {
   text-decoration: none;
 }
 
+.heder_fb_logo {
+  height: 25px;
+}
+
 .lower_heder {
   display: flex;
   justify-content: space-between;
@@ -1209,9 +1213,8 @@ body {
   .heder_box {
     grid-template-columns: 130px auto;
     grid-auto-rows: auto;
-    grid-template-areas: "logo heder" "logo burger_menu";
+    grid-template-areas: "logo heder" "logo open_burger_menu";
     justify-content: space-between;
-    align-items: center;
   }
   .logo {
     grid-area: logo;
@@ -1220,7 +1223,7 @@ body {
     grid-area: heder;
   }
   .open_burger_menu {
-    grid-area: burger_menu;
+    grid-area: open_burger_menu;
   }
 }
 @media (min-width: 1920px) {

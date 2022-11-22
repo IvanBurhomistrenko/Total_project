@@ -64,6 +64,10 @@
     text-decoration: none;
 }
 
+.heder_fb_logo {
+    height: 25px;
+}
+
 .lower_heder {
     display: flex;
     justify-content: space-between;
@@ -111,10 +115,9 @@
        grid-auto-rows: auto;
        grid-template-areas:
             "logo heder"
-            "logo burger_menu"
+            "logo open_burger_menu"
             ;
         justify-content: space-between;
-        align-items: center;
     }
 
     .logo {
@@ -126,7 +129,7 @@
     }
 
     .open_burger_menu {
-        grid-area: burger_menu;
+        grid-area: open_burger_menu;
     }
 }
 
